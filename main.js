@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const light = new THREE.HemisphereLight( 0xffffff, 0xbbbbff, 1 );
     scene.add(light);
 
-    const raccoon = await loadGLTF("./applications/assets/models/joe_biden_dancing/scene.gltf");
+    const raccoon = await loadGLTF("./applications/assets/models/donald_trump_dancing/scene.gltf");
     raccoon.scene.scale.set(1, 1, 1);
     raccoon.scene.position.set(0, -0.4, 0);
     //raccoon.scene.rotation.set(90 ,0, 0);
 
-    const bear = await loadGLTF("./applications/assets/models/donald_trump_dancing/scene.gltf");
+    const bear = await loadGLTF("./applications/assets/models/joe_biden_dancing/scene.gltf");
     bear.scene.scale.set(1, 1, 1);
     bear.scene.position.set(0, -0.4, 0);
     //bear.scene.rotation.set(90 ,0, 0);
@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
-    const raccoonAudioClip = await loadAudio("./applications/assets/sounds/Paradise-Found.mp3");
-    const bearAudioClip = await loadAudio("./applications/assets/sounds/Number-One.mp3");
+    const raccoonAudioClip = await loadAudio("./applications/assets/sounds/Number-One.mp3");
+    const bearAudioClip = await loadAudio("./applications/assets/sounds/Paradise-Found.mp3");
 
     const raccoonListener = new THREE.AudioListener();
     const raccoonAudio = new THREE.PositionalAudio(raccoonListener);
