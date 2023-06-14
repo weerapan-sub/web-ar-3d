@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
-    const raccoonAudioClip = await loadAudio("./applications/assets/sounds/Paradise-Found.wav");
-    const bearAudioClip = await loadAudio("./applications/assets/sounds/Number-One.wav");
+    const raccoonAudioClip = await loadAudio("./applications/assets/sounds/Paradise-Found.mp3");
+    const bearAudioClip = await loadAudio("./applications/assets/sounds/Number-One.mp3");
 
     const raccoonListener = new THREE.AudioListener();
     const raccoonAudio = new THREE.PositionalAudio(raccoonListener);
