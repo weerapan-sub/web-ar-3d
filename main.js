@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bear = await loadGLTF("./applications/assets/models/joe_biden_dancing/scene.gltf");
     bear.scene.scale.set(1, 1, 1);
     bear.scene.position.set(0, 0, 0);
-    bear.scene.rotation.set(70 ,0, 0);
+    bear.scene.rotation.set(45 ,0, 0);
 
     const raccoonAnchor = mindarThree.addAnchor(0);
     raccoonAnchor.group.add(raccoon.scene);
